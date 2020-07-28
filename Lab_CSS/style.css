@@ -1,0 +1,38 @@
+
+    body {
+        padding-left: 11em;
+        font-family: Georgia, "Times New Roman",
+          Times, serif;
+        color: purple;
+        background-color: #fff ;
+        background-image: url(/Demo/images/gradientBlue.png);
+        background-repeat: repeat-x;}
+    h1 {
+        font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }  
+    ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;}
+
+    ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid rgb(255, 0, 0) ;    }
+    ul.navbar a {
+    text-decoration: none ;}
+    a:link {
+    color: blue ;}
+    a:visited {
+    color: purple }
+    address{
+        margin-top: 4em;
+        border-top: 1px dashed black;
+        padding-top: 5px;
+    }
+  

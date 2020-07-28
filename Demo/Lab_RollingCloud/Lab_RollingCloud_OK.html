@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#banner {
+	position: relative;
+	width: 800px;
+	height: 168px;
+	margin: 0px auto; /*至中的一種*/
+	overflow: hidden; /*超過不顯示出來*/  /*hidden(隱藏) scroll(卷軸) visible(直接超出去)*/
+	outline: 1px solid gray;
+}
+
+#bannerText {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	font-family: Arial;
+	font-style: italic;
+	font-size: 20px;
+	color: DarkBlue;
+}
+
+#bannerImage {
+	position: relative;
+	width: 1800px;
+	height: 168px;
+	background-image: url('cloud.jpg');
+	background-repeat: repeat-x; /*往X方向重複   no-repeat不要重複*/
+	-webkit-animation: rollImage linear 12s infinite; /*-webkit-是寫給chrome用的*/
+    -moz-animation: rollImage linear 12s infinite;
+    -ms-animation: rollImage linear 12s infinite;
+    animation: rollImage linear 12s infinite;
+}
+
+@-webkit-keyframes rollImage { /*距離相對位置從0PX~300PX*/
+	from { right: 0px; }
+	to { right: 300px; }
+}
+
+@-moz-keyframes rollImage {
+	from { right: 0px; }
+	to { right: 300px; }
+}
+
+@-ms-keyframes rollImage {
+	from { right: 0px; }
+	to { right: 300px; }
+}
+
+@keyframes rollImage {
+	from { right: 0px; }
+	to { right: 300px; }
+}
+
+</style>
+</head>
+<body>
+
+	<div id="banner">
+		<div id="bannerImage"></div>
+		<div id="bannerText">Rolling Clouds</div>
+	</div>
+
+</body>
+</html>

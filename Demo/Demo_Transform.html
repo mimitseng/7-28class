@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.testTransform {
+    width: 80px;
+    height: 80px;
+    background-color: WhiteSmoke;
+    border: 1px solid Gray;
+    margin: 30px;
+    padding: 10px;
+    transition: transform 1s linear ,background-color 3s linear;
+}
+
+.testTransform:hover {
+    transform: rotate(360deg); /*選轉幾度 +順時鐘 -逆時鐘*/
+    background-color: RoyalBlue;
+    width: 60px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="testTransform">Test</div>
+
+</body>
+</html>
